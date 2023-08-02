@@ -1,10 +1,10 @@
-# Build the image with the name python
+# Build & run the image with the name python
 
-`docker run -it --name <container_name> <container_image_name>`
+`docker build -t <container_image> <container_name>`
 
 # Access the container in interactive mode
 
-`docker exec -it <container_name> /bin/bash`
+`docker exec -it <container_id> /bin/bash`
 
 # Exit the container
 
