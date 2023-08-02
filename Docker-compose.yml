@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: python
+    volumes:
+    # script
+      - ./script.py:/script.py
+    # data
+      - ./data:/data
+    command: python script.py
+      
